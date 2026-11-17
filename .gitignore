@@ -1,0 +1,23 @@
+# dependencies
+video/node_modules/
+node_modules/
+
+# Remotion render/QA output and caches
+video/out/
+out/
+video/.remotion/
+video/build/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+colab/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# The canonical narration lives at video/public/audio.wav.
+# This avoids committing a duplicate 38 MB WAV at the repo root.
+/audio.wav

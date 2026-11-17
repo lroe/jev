@@ -1,0 +1,76 @@
+import React from 'react';
+import {
+  Scene01, Scene02, Scene03, Scene04, Scene05, Scene06, Scene07, Scene08, Scene09,
+  Scene10, Scene11, Scene12, Scene13,
+} from './part1';
+import {
+  Scene14, Scene15, Scene16, Scene17, Scene18, Scene19, Scene20, Scene21,
+  Scene22, Scene23, Scene24, Scene25, Scene26, Scene27, Scene28,
+} from './part2';
+import {
+  Scene29, Scene30, Scene31, Scene32, Scene33, Scene34, Scene35, Scene36,
+  Scene37, Scene38, Scene39, Scene40, Scene41, Scene42, Scene43,
+} from './part3';
+import {
+  Scene44, Scene45, Scene46, Scene47, Scene48, Scene49, Scene50, Scene51,
+  Scene52, Scene53, Scene54,
+} from './part4';
+
+export type SceneDef = {id: string; start: number; end: number; C: React.FC};
+
+export const SCENES: SceneDef[] = [
+  {id: '01', start: 0, end: 10.25, C: Scene01},
+  {id: '02', start: 10.25, end: 16.95, C: Scene02},
+  {id: '03', start: 16.95, end: 23.05, C: Scene03},
+  {id: '04', start: 23.05, end: 31.85, C: Scene04},
+  {id: '05', start: 31.85, end: 36.6, C: Scene05},
+  {id: '06', start: 36.6, end: 44.95, C: Scene06},
+  {id: '07', start: 44.95, end: 59.15, C: Scene07},
+  {id: '08', start: 59.15, end: 75.7, C: Scene08},
+  {id: '09', start: 75.7, end: 100.0, C: Scene09},
+  {id: '10', start: 100.0, end: 107.1, C: Scene10},
+  {id: '11', start: 107.1, end: 120.2, C: Scene11},
+  {id: '12', start: 120.2, end: 135.2, C: Scene12},
+  {id: '13', start: 135.2, end: 145.6, C: Scene13},
+  {id: '14', start: 145.6, end: 165.3, C: Scene14},
+  {id: '15', start: 165.3, end: 168.6, C: Scene15},
+  {id: '16', start: 168.6, end: 187.5, C: Scene16},
+  {id: '17', start: 187.5, end: 200.95, C: Scene17},
+  {id: '18', start: 200.95, end: 227.1, C: Scene18},
+  {id: '19', start: 227.1, end: 247.3, C: Scene19},
+  {id: '20', start: 247.3, end: 265.55, C: Scene20},
+  {id: '21', start: 265.55, end: 288.55, C: Scene21},
+  {id: '22', start: 288.55, end: 303.25, C: Scene22},
+  {id: '23', start: 303.25, end: 313.1, C: Scene23},
+  {id: '24', start: 313.1, end: 331.3, C: Scene24},
+  {id: '25', start: 331.3, end: 344.3, C: Scene25},
+  {id: '26', start: 344.3, end: 356.2, C: Scene26},
+  {id: '27', start: 356.2, end: 372.1, C: Scene27},
+  {id: '28', start: 372.1, end: 383.9, C: Scene28},
+  {id: '29', start: 383.9, end: 400.55, C: Scene29},
+  {id: '30', start: 400.55, end: 422.6, C: Scene30},
+  {id: '31', start: 422.6, end: 440.0, C: Scene31},
+  {id: '32', start: 440.0, end: 466.4, C: Scene32},
+  {id: '33', start: 466.4, end: 482.6, C: Scene33},
+  {id: '34', start: 482.6, end: 498.05, C: Scene34},
+  {id: '35', start: 498.05, end: 513.55, C: Scene35},
+  {id: '36', start: 513.55, end: 531.2, C: Scene36},
+  {id: '37', start: 531.2, end: 557.95, C: Scene37},
+  {id: '38', start: 557.95, end: 563.65, C: Scene38},
+  {id: '39', start: 563.65, end: 581.6, C: Scene39},
+  {id: '40', start: 581.6, end: 591.6, C: Scene40},
+  {id: '41', start: 591.6, end: 603.4, C: Scene41},
+  {id: '42', start: 603.4, end: 613.9, C: Scene42},
+  {id: '43', start: 613.9, end: 629.45, C: Scene43},
+  {id: '44', start: 629.45, end: 651.55, C: Scene44},
+  {id: '45', start: 651.55, end: 659.75, C: Scene45},
+  {id: '46', start: 659.75, end: 678.95, C: Scene46},
+  {id: '47', start: 678.95, end: 706.2, C: Scene47},
+  {id: '48', start: 706.2, end: 712.75, C: Scene48},
+  {id: '49', start: 712.75, end: 719.4, C: Scene49},
+  {id: '50', start: 719.4, end: 734.5, C: Scene50},
+  {id: '51', start: 734.5, end: 753.85, C: Scene51},
+  {id: '52', start: 753.85, end: 772.4, C: Scene52},
+  {id: '53', start: 772.4, end: 784.3, C: Scene53},
+  {id: '54', start: 784.3, end: 794.0, C: Scene54},
+];

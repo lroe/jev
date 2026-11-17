@@ -1,0 +1,220 @@
+sentences 219 aligned 219
+  0 p  0    0.00-   4.02 gap 0.00 wc 12 There’s an AI model called Jev that can’t chat or write code.
+  1 p  0    4.68-   6.42 gap 0.66 wc 10 All it does is pick an answer from a list.
+  2 p  1    7.28-   9.84 gap 0.86 wc 10 And a lot of people got very excited about it.
+  3 p  2   10.56-  16.62 gap 0.72 wc 21 We hand it some text and a few options, and it tells us which option fits, and how sure it
+  4 p  2   17.28-  18.22 gap 0.66 wc  4 Spam or not spam.
+  5 p  2   18.74-  20.22 gap 0.52 wc  5 Happy customer or angry one.
+  6 p  2   20.84-  22.38 gap 0.62 wc  5 Billing problem or technical problem.
+  7 p  3   23.12-  26.30 gap 0.74 wc 10 Some of us shrugged, because we’ve had classifiers for decades.
+  8 p  3   27.26-  28.38 gap 0.96 wc  5 Others had it playing Tetris.
+  9 p  3   29.10-  29.52 gap 0.72 wc  2 Same model.
+ 10 p  3   30.08-  31.34 gap 0.56 wc  2 Yes, Tetris.
+ 11 p  4   32.32-  35.32 gap 0.98 wc 10 So is it boring, or is it a big deal?
+ 12 p  4   36.16-  40.76 gap 0.84 wc 17 To figure that out, let’s look at how machines learned to sort text in the first place.
+ 13 p  4   41.48-  44.58 gap 0.72 wc 11 It’s hard to judge Jev without knowing what came before it.
+ 14 p  5   45.58-  47.34 gap 1.00 wc  4 Classification just means sorting.
+ 15 p  5   47.98-  50.56 gap 0.64 wc 10 A pile of text goes in, a label comes out.
+ 16 p  5   51.26-  52.88 gap 0.70 wc  6 Email goes to spam or inbox.
+ 17 p  5   53.52-  55.60 gap 0.64 wc  7 A review goes to positive or negative.
+ 18 p  5   56.24-  58.52 gap 0.64 wc  8 A support ticket goes to billing or tech.
+ 19 p  6   59.66-  62.16 gap 1.14 wc  9 Computers are good with numbers, and sentences are messy.
+ 20 p  6   62.86-  65.38 gap 0.70 wc  9 They can be ten words long or ten thousand.
+ 21 p  6   66.12-  69.84 gap 0.74 wc 11 The classic sorting tools need an input of one fixed size.
+ 22 p  6   69.84-  71.94 gap 0.00 wc  8 So the first job is always the same.
+ 23 p  6   72.48-  75.46 gap 0.54 wc 12 We have to turn messy text into a neat row of numbers.
+ 24 p  7   75.92-  78.44 gap 0.46 wc  7 The oldest answer is also the simplest.
+ 25 p  7   79.02-  81.00 gap 0.58 wc  8 We list every word in our training data.
+ 26 p  7   81.44-  83.04 gap 0.44 wc  4 Say fifty thousand words.
+ 27 p  7   83.70-  85.38 gap 0.66 wc  6 Every word gets its own slot.
+ 28 p  7   86.14-  87.76 gap 0.76 wc  6 Then, for any message, we count.
+ 29 p  7   88.44-  90.34 gap 0.68 wc  6 How many times does “free” appear?
+ 30 p  7   91.00-  91.72 gap 0.66 wc  3 How about “refund”?
+ 31 p  7   92.52-  96.08 gap 0.80 wc 12 We end up with a row of fifty thousand numbers, mostly zeros.
+ 32 p  7   96.54-  99.42 gap 0.46 wc 13 A short message and a long one give us the same size row.
+ 33 p  8  100.10- 101.90 gap 0.68 wc  7 This is called a bag of words.
+ 34 p  8  102.62- 106.26 gap 0.72 wc 15 Think of it as tossing the whole message in a bag and counting what’s inside.
+ 35 p  9  107.30- 113.54 gap 1.04 wc 16 Then a simple model, naive Bayes or logistic regression, learns which words lean toward wh
+ 36 p  9  114.62- 116.58 gap 1.08 wc  6 “Winner” and “prize” push toward spam.
+ 37 p  9  117.60- 119.52 gap 1.02 wc  7 “Attached” and “meeting” push the other way.
+ 38 p 10  120.32- 121.16 gap 0.80 wc  5 And it works pretty well.
+ 39 p 10  121.96- 126.74 gap 0.80 wc 18 Text sorting like this goes back to the early sixties, and it’s been behind plenty of spam
+ 40 p 10  127.56- 130.40 gap 0.82 wc  9 On movie reviews, it gets about ninety percent right.
+ 41 p 10  130.40- 134.10 gap 0.00 wc 12 It’s fast, it’s cheap, and we can build one in an afternoon.
+ 42 p 11  135.56- 136.24 gap 1.46 wc  4 But there’s a problem.
+ 43 p 11  136.58- 137.78 gap 0.34 wc  5 We lost the word order.
+ 44 p 11  138.14- 145.14 gap 0.36 wc 28 “The dog bites the man” and “the man bites the dog” make the exact same row of numbers, ev
+ 45 p 12  146.16- 147.72 gap 1.02 wc  6 The fix came in two parts.
+ 46 p 12  148.28- 153.44 gap 0.56 wc 20 First, we stop giving words a slot in a list, and give each word a short string of numbers
+ 47 p 12  154.06- 155.22 gap 0.62 wc  5 This is called an embedding.
+ 48 p 12  155.70- 164.86 gap 0.48 wc 27 Words used in similar ways get similar numbers, so “good” ends up near “great” and far fro
+ 49 p 12  165.40- 168.04 gap 0.54 wc  9 “Bank” looks identical in “river bank” and “bank account.”
+ 50 p 13  169.20- 172.04 gap 1.16 wc 11 Second, we build a network that reads the words in order.
+ 51 p 13  172.42- 174.26 gap 0.38 wc  7 The classic one is the recurrent network.
+ 52 p 13  174.76- 180.46 gap 0.50 wc 23 It reads one word at a time and keeps a running summary, like someone holding the gist of 
+ 53 p 13  181.08- 182.82 gap 0.62 wc  6 Each new word updates the gist.
+ 54 p 13  183.14- 184.52 gap 0.32 wc  4 So order matters now.
+ 55 p 13  184.52- 187.08 gap 0.00 wc  9 Shuffle the words and the gist comes out different.
+ 56 p 14  187.90- 188.30 gap 0.82 wc  3 There’s a catch.
+ 57 p 14  188.80- 193.86 gap 0.50 wc 17 That summary has a fixed size, so in a long text the early parts get squeezed out.
+ 58 p 14  194.52- 200.48 gap 0.66 wc 20 These networks were also slow, since each step waits for the last one, and they were famou
+ 59 p 15  201.22- 205.70 gap 0.74 wc 15 Then, in twenty eighteen, a method called U L M Fit showed a better way.
+ 60 p 15  206.34- 207.46 gap 0.64 wc  4 Don’t start from zero.
+ 61 p 15  208.16- 213.16 gap 0.70 wc 17 First, train the network on a huge pile of ordinary text so it learns how language works.
+ 62 p 15  213.16- 216.50 gap 0.00 wc 10 Then fine-tune it on the small task we care about.
+ 63 p 15  217.32- 220.56 gap 0.82 wc  8 Movie review accuracy jumped to around ninety-five percent.
+ 64 p 16  220.56- 225.00 gap 0.00 wc  9 Remember that idea: train big first, then fine-tune small.
+ 65 p 16  225.44- 226.34 gap 0.44 wc  4 It keeps coming back.
+ 66 p 17  227.56- 228.80 gap 1.22 wc  5 There was another option too.
+ 67 p 17  229.58- 241.88 gap 0.78 wc 37 Convolutional networks, the kind used for images, can slide a small window across a senten
+ 68 p 17  241.88- 245.18 gap 0.00 wc 13 On reviews, they did about as well as the old bag of words.
+ 69 p 17  245.80- 247.16 gap 0.62 wc  4 Decent, but nothing special.
+ 70 p 18  247.98- 250.98 gap 0.82 wc  7 Then, in twenty seventeen, the transformer arrived.
+ 71 p 18  251.50- 252.88 gap 0.52 wc  5 Its big trick is attention.
+ 72 p 18  253.76- 257.82 gap 0.88 wc 14 Every word can look straight at every other word and decide which ones matter.
+ 73 p 18  258.46- 260.62 gap 0.64 wc  7 There’s no fading summary to worry about.
+ 74 p 18  261.42- 265.22 gap 0.80 wc 13 “Bank” can look at “river” and know which kind of bank it is.
+ 75 p 19  265.80- 267.18 gap 0.58 wc  6 Two families grew out of it.
+ 76 p 19  267.80- 272.94 gap 0.62 wc 14 Encoder models, like BERT, read text in both directions and are built to understand.
+ 77 p 19  273.52- 280.82 gap 0.58 wc 27 They put a special marker at the front, and once the model has read everything, that marke
+ 78 p 19  281.80- 286.38 gap 0.98 wc 15 Decoder models, like G P T, read left to right and predict the next word.
+ 79 p 19  286.96- 287.72 gap 0.58 wc  4 They’re built to write.
+ 80 p 20  288.60- 292.52 gap 0.88 wc 13 For a while, encoders were the natural sorters and decoders were the writers.
+ 81 p 20  292.52- 295.98 gap 0.00 wc  9 Then it turned out decoders could sort well too.
+ 82 p 20  296.64- 297.30 gap 0.66 wc  4 We can just ask.
+ 83 p 20  297.78- 302.92 gap 0.48 wc 14 “Is this review positive or negative?” A big enough model answers, no training needed.
+ 84 p 21  303.68- 305.20 gap 0.76 wc  6 The problem is that it’s sloppy.
+ 85 p 21  305.82- 309.26 gap 0.62 wc 12 We want one clean label and sometimes we get a whole paragraph.
+ 86 p 21  309.86- 312.76 gap 0.60 wc 12 And we’re paying for a giant model to do a small job.
+ 87 p 22  313.56- 316.18 gap 0.80 wc 11 So a lot of teams went with a less exciting option.
+ 88 p 22  316.58- 322.18 gap 0.40 wc 16 They took a modern encoder like Modern BERT, added a small classification head, and fine-t
+ 89 p 22  322.80- 326.40 gap 0.62 wc 12 With almost no effort, that gets around ninety-five percent on movie reviews.
+ 90 p 22  326.86- 330.88 gap 0.46 wc 12 Even a small G P T two sized model reaches about ninety-two.
+ 91 p 23  330.88- 334.30 gap 0.00 wc 14 So by now we had two options, and a rule of thumb for picking.
+ 92 p 24  335.10- 338.36 gap 0.80 wc 11 Option one was to ask a big general model every time.
+ 93 p 24  338.82- 340.32 gap 0.46 wc  4 No training, super flexible.
+ 94 p 24  340.90- 343.94 gap 0.58 wc 10 But it’s slow, and it costs real money at scale.
+ 95 p 25  344.78- 347.94 gap 0.84 wc 11 Option two was to fine-tune a small model for the job.
+ 96 p 25  348.56- 349.88 gap 0.62 wc  5 Fast and cheap to run.
+ 97 p 25  350.46- 355.26 gap 0.58 wc 17 But we need labeled data, a training run, and a brand new model for every new problem.
+ 98 p 26  355.94- 356.72 gap 0.68 wc  4 The rule was simple.
+ 99 p 26  357.04- 359.40 gap 0.32 wc  8 For a one-off question, ask the big model.
+100 p 26  359.86- 362.50 gap 0.46 wc 10 For the same task a million times, train our own.
+101 p 26  363.04- 364.04 gap 0.54 wc  5 But that left a gap.
+102 p 26  364.58- 369.34 gap 0.54 wc 15 What we wanted was something quick and cheap that works on any question without training.
+103 p 26  370.00- 371.48 gap 0.66 wc  6 That’s the gap Jev steps into.
+104 p 27  371.48- 372.70 gap 0.00 wc  2 Quick break.
+105 p 27  373.08- 375.02 gap 0.38 wc  9 If this is helping, please subscribe to the channel.
+106 p 27  375.62- 381.64 gap 0.60 wc 19 We explain AI topics in plain English, with no jargon, so none of it sounds like a foreign
+107 p 27  382.62- 383.66 gap 0.98 wc  4 Okay, back to Jev.
+108 p 28  384.66- 387.12 gap 1.00 wc  8 Jev comes from a company called TypeSafe AI.
+109 p 28  387.70- 390.58 gap 0.58 wc 11 We send it text, plus a question with some possible answers.
+110 p 28  391.20- 393.10 gap 0.62 wc  7 It sends back its pick, and probabilities.
+111 p 28  394.02- 400.08 gap 0.92 wc 18 They claim it matches the big Luna-class models on decision tasks, while being far faster 
+112 p 29  401.00- 402.40 gap 0.92 wc  5 There are three question types.
+113 p 29  402.92- 405.46 gap 0.52 wc 11 The first is Choice, which picks one answer from a list.
+114 p 29  406.18- 411.06 gap 0.72 wc 14 The second is Noul, a yes-or-no question where we get a probability for yes.
+115 p 29  411.90- 416.28 gap 0.84 wc 17 Ask several Noul questions at once and we can handle texts that fit more than one label.
+116 p 29  417.20- 422.20 gap 0.92 wc 15 The third is Score, which grades something against a rubric, like zero, one, or two.
+117 p 30  423.10- 429.98 gap 0.90 wc 20 For movie reviews, we paste in the review, ask “what’s the overall sentiment?”, and descri
+118 p 30  430.92- 432.64 gap 0.94 wc  5 Negative means an unfavorable opinion.
+119 p 30  433.14- 434.70 gap 0.50 wc  5 Positive means a favorable one.
+120 p 30  435.38- 439.34 gap 0.68 wc 12 Back comes “positive,” a confidence number, and a probability for each option.
+121 p 31  440.26- 446.06 gap 0.92 wc 19 When people ran all twenty-five thousand test reviews through it, it got about ninety-six 
+122 p 31  446.64- 449.62 gap 0.58 wc 10 It took around twenty minutes and cost about sixty-five cents.
+123 p 31  450.20- 454.08 gap 0.58 wc 12 That’s slightly ahead of a fine-tuned Modern BERT, with no training run.
+124 p 31  454.98- 455.72 gap 0.90 wc  4 A couple of caveats.
+125 p 31  456.18- 458.76 gap 0.46 wc 11 We can’t tell whether those reviews were in its training data.
+126 p 31  459.02- 461.30 gap 0.26 wc  6 And the runs aren’t perfectly repeatable.
+127 p 31  461.68- 463.44 gap 0.38 wc  5 Same input, slightly different totals.
+128 p 31  463.94- 465.82 gap 0.50 wc  7 That’s normal for models served at scale.
+129 p 32  466.78- 468.66 gap 0.96 wc  8 This next part surprised a lot of people.
+130 p 32  469.10- 473.10 gap 0.44 wc 14 If we swap the question, the same model can play Tetris in real time.
+131 p 32  473.66- 478.08 gap 0.56 wc 14 Every move is just a choice from a short list: left, right, rotate, drop.
+132 p 32  478.86- 481.94 gap 0.78 wc 10 A fine-tuned sentiment model can’t do that without starting over.
+133 p 33  482.92- 486.60 gap 0.98 wc 15 Nobody outside the company knows how Jev is built, so this part is a guess.
+134 p 33  487.18- 489.78 gap 0.58 wc 13 But there’s a simple trick that could make a model like this work.
+135 p 34  490.74- 493.56 gap 0.96 wc  8 Normally, a classifier has one output per label.
+136 p 34  494.00- 495.42 gap 0.44 wc  4 Two labels, two outputs.
+137 p 34  495.84- 496.52 gap 0.42 wc  4 Want a third label?
+138 p 34  496.96- 497.62 gap 0.44 wc  3 Rebuild the model.
+139 p 35  498.14- 500.76 gap 0.52 wc  8 The trick is to use only one output.
+140 p 35  501.40- 507.52 gap 0.64 wc 17 For each option, we show the model three things: the text, the instructions, and that opti
+141 p 35  508.16- 512.48 gap 0.64 wc 14 It reads them and produces a single number for how well the option fits.
+142 p 35  513.20- 518.82 gap 0.72 wc 18 We do this for every option, squash the scores into probabilities with softmax, and take t
+143 p 35  519.42- 522.50 gap 0.60 wc  9 Three options means three passes through the same scorer.
+144 p 35  522.74- 524.42 gap 0.24 wc  4 Seven options, seven passes.
+145 p 35  524.92- 526.48 gap 0.50 wc  6 The model doesn’t mind either way.
+146 p 35  526.94- 530.76 gap 0.46 wc 15 The labels are just part of the input now, so they can change every time.
+147 p 36  530.76- 532.88 gap 0.00 wc  6 That part is easy to build.
+148 p 36  533.28- 539.00 gap 0.40 wc 20 The hard part is making it work on tasks it has never seen, and that comes down to trainin
+149 p 36  539.66- 545.56 gap 0.66 wc 18 The company says its data is entirely synthetic, but carefully made, not just dumped out o
+150 p 36  546.18- 548.88 gap 0.62 wc 11 If that’s true, most of the effort went into the data.
+151 p 36  549.46- 552.10 gap 0.58 wc 11 That fits something people in machine learning have seen for years.
+152 p 36  552.56- 557.74 gap 0.46 wc 17 When a model isn’t good enough, better data usually helps more than another week of tweaki
+153 p 37  557.74- 561.52 gap 0.00 wc 10 The part we find most interesting isn’t flashy at all.
+154 p 37  562.04- 562.96 gap 0.52 wc  3 It’s the probabilities.
+155 p 38  563.88- 566.86 gap 0.92 wc  9 Say a model calls a review seventy-four percent positive.
+156 p 38  567.46- 569.06 gap 0.60 wc  5 That number should mean something.
+157 p 38  569.54- 574.74 gap 0.48 wc 16 If we collect a hundred reviews that got a seventy-four, about seventy-four should truly b
+158 p 38  575.46- 576.36 gap 0.72 wc  2 That’s calibration.
+159 p 38  577.56- 579.38 gap 1.20 wc  7 Neural networks are usually bad at it.
+160 p 38  579.68- 581.14 gap 0.30 wc  5 They sound sure about everything.
+161 p 38  581.66- 586.76 gap 0.52 wc 16 A seventy-four and a fifty-four both give the label “positive,” but we’d treat them very d
+162 p 38  587.38- 588.60 gap 0.62 wc  6 We could trust the first one.
+163 p 38  588.90- 590.24 gap 0.30 wc  7 The second should go to a person.
+164 p 39  591.28- 592.94 gap 1.04 wc  5 One fix is temperature scaling.
+165 p 39  593.48- 599.00 gap 0.54 wc 17 We divide the model’s raw scores by a single number before the softmax, tuned on held-out 
+166 p 39  599.56- 602.64 gap 0.56 wc 12 It changes how sure the model sounds, not which answer it picks.
+167 p 40  603.54- 607.80 gap 0.90 wc 16 TypeSafe says it trains for honesty directly, with a method it calls R L C D.
+168 p 40  608.34- 609.42 gap 0.54 wc  4 The details are secret.
+169 p 40  609.54- 613.24 gap 0.12 wc 13 But a published idea points the same way, called R L C R.
+170 p 40  614.04- 619.36 gap 0.80 wc 19 Normally in this kind of reinforcement learning, a right answer earns one point and a wron
+171 p 40  620.64- 628.92 gap 1.28 wc 29 R L C R also asks the model to state how likely it is to be right, then subtracts the squa
+172 p 41  629.64- 630.60 gap 0.72 wc  5 Here’s how that plays out.
+173 p 41  631.02- 632.32 gap 0.42 wc  5 Ninety percent sure and right?
+174 p 41  632.32- 634.28 gap 0.00 wc  6 That scores zero point nine nine.
+175 p 41  634.94- 636.10 gap 0.66 wc  5 Ninety percent sure and wrong?
+176 p 41  636.68- 637.98 gap 0.58 wc  5 Minus zero point eight one.
+177 p 41  638.58- 640.44 gap 0.60 wc  7 Almost a whole point lost for swagger.
+178 p 41  641.00- 642.48 gap 0.56 wc  5 Twenty percent sure and wrong?
+179 p 41  643.20- 647.28 gap 0.72 wc 15 Minus zero point zero four, a tiny slap, because it knew it might be wrong.
+180 p 41  648.16- 651.24 gap 0.88 wc 13 So the model’s best move is to be honest about what it knows.
+181 p 41  651.72- 658.84 gap 0.48 wc 24 In that paper, calibration error on one test dropped from zero point three seven to zero p
+182 p 42  659.54- 662.30 gap 0.70 wc  8 We don’t know if Jev works this way.
+183 p 43  662.30- 664.86 gap 0.00 wc 10 A fair question is whether normal training already does this.
+184 p 43  665.32- 666.32 gap 0.46 wc  3 In theory, yes.
+185 p 43  666.84- 669.66 gap 0.52 wc  6 In practice, networks overfit their confidence.
+186 p 43  670.22- 675.00 gap 0.56 wc 18 They can get more and more certain on training data without getting any more correct on ne
+187 p 43  675.58- 678.64 gap 0.58 wc 13 So extra tricks sometimes help a little, and we always have to check.
+188 p 44  679.84- 682.84 gap 1.20 wc  8 Soon after Jev launched, hundreds of clones appeared.
+189 p 44  683.24- 689.24 gap 0.40 wc 19 Most take a small model, fine-tune it on sorting examples, and wrap a Jev-looking A P I ar
+190 p 44  689.60- 690.42 gap 0.36 wc  4 That’s the easy part.
+191 p 44  690.42- 697.42 gap 0.00 wc 22 When people tested a couple of the better ones on the movie reviews, one scored about eigh
+192 p 44  698.18- 699.64 gap 0.76 wc  6 Neither could handle the Tetris test.
+193 p 44  700.38- 705.50 gap 0.74 wc 18 Handling lots of different tasks is the hard part, and that’s what set Jev apart from the 
+194 p 45  706.40- 709.34 gap 0.90 wc 12 An open version would still be a big deal, mostly for privacy.
+195 p 45  710.04- 712.00 gap 0.70 wc 10 Plenty of text can’t be sent to someone else’s servers.
+196 p 46  712.94- 714.20 gap 0.94 wc  5 The big labs noticed too.
+197 p 46  714.70- 718.52 gap 0.50 wc 13 OpenAI announced its own version, the Decisions A P I, built on Luna.
+198 p 47  718.52- 720.56 gap 0.00 wc  5 It has weak spots too.
+199 p 47  721.26- 727.44 gap 0.70 wc 21 Reportedly, Jev struggles with legal review in languages other than English, though a chea
+200 p 47  728.00- 733.88 gap 0.56 wc 18 And for one narrow task at huge volume, a custom fine-tuned model still wins on speed and 
+201 p 48  735.08- 735.84 gap 1.20 wc  5 Where would we use it?
+202 p 48  736.38- 739.58 gap 0.54 wc 10 The obvious ones are sorting email and routing support tickets.
+203 p 48  740.04- 744.30 gap 0.46 wc 14 It could also check text for prompt injection before it reaches an AI agent.
+204 p 48  744.74- 747.30 gap 0.44 wc  9 Or decide how hard a big model should think.
+205 p 48  747.98- 750.54 gap 0.68 wc  9 Or pick which instruction file an agent should load.
+206 p 48  751.06- 753.54 gap 0.52 wc 10 Or act as a judge when we test other models.
+207 p 49  754.46- 756.60 gap 0.92 wc  8 None of that is a new ability, though.
+208 p 49  757.04- 757.96 gap 0.44 wc  3 Classifiers are old.
+209 p 49  758.48- 761.28 gap 0.52 wc 10 What changed is how hard it is to get one.
+210 p 49  761.82- 764.48 gap 0.54 wc 11 It used to take a labeled dataset and a training run.
+211 p 49  765.12- 767.80 gap 0.64 wc  9 Now it takes a sentence describing what we want.
+212 p 49  768.44- 771.78 gap 0.64 wc 14 So the bar for building our own model is much higher than it was.
+213 p 50  772.66- 780.62 gap 0.88 wc 23 And if small, fast models handle the little choices inside bigger AI systems, the expensiv
+214 p 50  781.42- 783.92 gap 0.80 wc  8 That could make AI agents cheaper and quicker.
+215 p 51  784.76- 786.20 gap 0.84 wc  7 So is it just a boring tool?
+216 p 51  787.06- 787.46 gap 0.86 wc  2 Kind of.
+217 p 51  787.92- 789.42 gap 0.46 wc  6 It’s the same old sorting job.
+218 p 51  789.72- 793.54 gap 0.30 wc 18 We just get to ask for it in plain English now, and the answer comes back almost instantly

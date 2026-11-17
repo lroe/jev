@@ -1,0 +1,1535 @@
+[
+ {
+  "i": 0,
+  "p": 0,
+  "start": 0.0,
+  "end": 4.02,
+  "text": "There\u2019s an AI model called Jev that can\u2019t chat or write code."
+ },
+ {
+  "i": 1,
+  "p": 0,
+  "start": 4.68,
+  "end": 6.42,
+  "text": "All it does is pick an answer from a list."
+ },
+ {
+  "i": 2,
+  "p": 1,
+  "start": 7.28,
+  "end": 9.84,
+  "text": "And a lot of people got very excited about it."
+ },
+ {
+  "i": 3,
+  "p": 2,
+  "start": 10.56,
+  "end": 16.62,
+  "text": "We hand it some text and a few options, and it tells us which option fits, and how sure it is."
+ },
+ {
+  "i": 4,
+  "p": 2,
+  "start": 17.28,
+  "end": 18.22,
+  "text": "Spam or not spam."
+ },
+ {
+  "i": 5,
+  "p": 2,
+  "start": 18.74,
+  "end": 20.22,
+  "text": "Happy customer or angry one."
+ },
+ {
+  "i": 6,
+  "p": 2,
+  "start": 20.84,
+  "end": 22.38,
+  "text": "Billing problem or technical problem."
+ },
+ {
+  "i": 7,
+  "p": 3,
+  "start": 23.12,
+  "end": 26.3,
+  "text": "Some of us shrugged, because we\u2019ve had classifiers for decades."
+ },
+ {
+  "i": 8,
+  "p": 3,
+  "start": 27.26,
+  "end": 28.38,
+  "text": "Others had it playing Tetris."
+ },
+ {
+  "i": 9,
+  "p": 3,
+  "start": 29.1,
+  "end": 29.52,
+  "text": "Same model."
+ },
+ {
+  "i": 10,
+  "p": 3,
+  "start": 30.08,
+  "end": 31.34,
+  "text": "Yes, Tetris."
+ },
+ {
+  "i": 11,
+  "p": 4,
+  "start": 32.32,
+  "end": 35.32,
+  "text": "So is it boring, or is it a big deal?"
+ },
+ {
+  "i": 12,
+  "p": 4,
+  "start": 36.16,
+  "end": 40.76,
+  "text": "To figure that out, let\u2019s look at how machines learned to sort text in the first place."
+ },
+ {
+  "i": 13,
+  "p": 4,
+  "start": 41.48,
+  "end": 44.58,
+  "text": "It\u2019s hard to judge Jev without knowing what came before it."
+ },
+ {
+  "i": 14,
+  "p": 5,
+  "start": 45.58,
+  "end": 47.34,
+  "text": "Classification just means sorting."
+ },
+ {
+  "i": 15,
+  "p": 5,
+  "start": 47.98,
+  "end": 50.56,
+  "text": "A pile of text goes in, a label comes out."
+ },
+ {
+  "i": 16,
+  "p": 5,
+  "start": 51.26,
+  "end": 52.88,
+  "text": "Email goes to spam or inbox."
+ },
+ {
+  "i": 17,
+  "p": 5,
+  "start": 53.52,
+  "end": 55.6,
+  "text": "A review goes to positive or negative."
+ },
+ {
+  "i": 18,
+  "p": 5,
+  "start": 56.24,
+  "end": 58.52,
+  "text": "A support ticket goes to billing or tech."
+ },
+ {
+  "i": 19,
+  "p": 6,
+  "start": 59.66,
+  "end": 62.16,
+  "text": "Computers are good with numbers, and sentences are messy."
+ },
+ {
+  "i": 20,
+  "p": 6,
+  "start": 62.86,
+  "end": 65.38,
+  "text": "They can be ten words long or ten thousand."
+ },
+ {
+  "i": 21,
+  "p": 6,
+  "start": 66.12,
+  "end": 69.84,
+  "text": "The classic sorting tools need an input of one fixed size."
+ },
+ {
+  "i": 22,
+  "p": 6,
+  "start": 69.84,
+  "end": 71.94,
+  "text": "So the first job is always the same."
+ },
+ {
+  "i": 23,
+  "p": 6,
+  "start": 72.48,
+  "end": 75.46,
+  "text": "We have to turn messy text into a neat row of numbers."
+ },
+ {
+  "i": 24,
+  "p": 7,
+  "start": 75.92,
+  "end": 78.44,
+  "text": "The oldest answer is also the simplest."
+ },
+ {
+  "i": 25,
+  "p": 7,
+  "start": 79.02,
+  "end": 81.0,
+  "text": "We list every word in our training data."
+ },
+ {
+  "i": 26,
+  "p": 7,
+  "start": 81.44,
+  "end": 83.04,
+  "text": "Say fifty thousand words."
+ },
+ {
+  "i": 27,
+  "p": 7,
+  "start": 83.7,
+  "end": 85.38,
+  "text": "Every word gets its own slot."
+ },
+ {
+  "i": 28,
+  "p": 7,
+  "start": 86.14,
+  "end": 87.76,
+  "text": "Then, for any message, we count."
+ },
+ {
+  "i": 29,
+  "p": 7,
+  "start": 88.44,
+  "end": 90.34,
+  "text": "How many times does \u201cfree\u201d appear?"
+ },
+ {
+  "i": 30,
+  "p": 7,
+  "start": 91.0,
+  "end": 91.72,
+  "text": "How about \u201crefund\u201d?"
+ },
+ {
+  "i": 31,
+  "p": 7,
+  "start": 92.52,
+  "end": 96.08,
+  "text": "We end up with a row of fifty thousand numbers, mostly zeros."
+ },
+ {
+  "i": 32,
+  "p": 7,
+  "start": 96.54,
+  "end": 99.42,
+  "text": "A short message and a long one give us the same size row."
+ },
+ {
+  "i": 33,
+  "p": 8,
+  "start": 100.1,
+  "end": 101.9,
+  "text": "This is called a bag of words."
+ },
+ {
+  "i": 34,
+  "p": 8,
+  "start": 102.62,
+  "end": 106.26,
+  "text": "Think of it as tossing the whole message in a bag and counting what\u2019s inside."
+ },
+ {
+  "i": 35,
+  "p": 9,
+  "start": 107.3,
+  "end": 113.54,
+  "text": "Then a simple model, naive Bayes or logistic regression, learns which words lean toward which label."
+ },
+ {
+  "i": 36,
+  "p": 9,
+  "start": 114.62,
+  "end": 116.58,
+  "text": "\u201cWinner\u201d and \u201cprize\u201d push toward spam."
+ },
+ {
+  "i": 37,
+  "p": 9,
+  "start": 117.6,
+  "end": 119.52,
+  "text": "\u201cAttached\u201d and \u201cmeeting\u201d push the other way."
+ },
+ {
+  "i": 38,
+  "p": 10,
+  "start": 120.32,
+  "end": 121.16,
+  "text": "And it works pretty well."
+ },
+ {
+  "i": 39,
+  "p": 10,
+  "start": 121.96,
+  "end": 126.74,
+  "text": "Text sorting like this goes back to the early sixties, and it\u2019s been behind plenty of spam filters."
+ },
+ {
+  "i": 40,
+  "p": 10,
+  "start": 127.56,
+  "end": 130.4,
+  "text": "On movie reviews, it gets about ninety percent right."
+ },
+ {
+  "i": 41,
+  "p": 10,
+  "start": 130.4,
+  "end": 134.1,
+  "text": "It\u2019s fast, it\u2019s cheap, and we can build one in an afternoon."
+ },
+ {
+  "i": 42,
+  "p": 11,
+  "start": 135.56,
+  "end": 136.24,
+  "text": "But there\u2019s a problem."
+ },
+ {
+  "i": 43,
+  "p": 11,
+  "start": 136.58,
+  "end": 137.78,
+  "text": "We lost the word order."
+ },
+ {
+  "i": 44,
+  "p": 11,
+  "start": 138.14,
+  "end": 145.14,
+  "text": "\u201cThe dog bites the man\u201d and \u201cthe man bites the dog\u201d make the exact same row of numbers, even though one is ordinary and the other is news."
+ },
+ {
+  "i": 45,
+  "p": 12,
+  "start": 146.16,
+  "end": 147.72,
+  "text": "The fix came in two parts."
+ },
+ {
+  "i": 46,
+  "p": 12,
+  "start": 148.28,
+  "end": 153.44,
+  "text": "First, we stop giving words a slot in a list, and give each word a short string of numbers instead."
+ },
+ {
+  "i": 47,
+  "p": 12,
+  "start": 154.06,
+  "end": 155.22,
+  "text": "This is called an embedding."
+ },
+ {
+  "i": 48,
+  "p": 12,
+  "start": 155.7,
+  "end": 164.86,
+  "text": "Words used in similar ways get similar numbers, so \u201cgood\u201d ends up near \u201cgreat\u201d and far from \u201cawful.\u201d One flaw: a word gets the same numbers everywhere."
+ },
+ {
+  "i": 49,
+  "p": 12,
+  "start": 165.4,
+  "end": 168.04,
+  "text": "\u201cBank\u201d looks identical in \u201criver bank\u201d and \u201cbank account.\u201d"
+ },
+ {
+  "i": 50,
+  "p": 13,
+  "start": 169.2,
+  "end": 172.04,
+  "text": "Second, we build a network that reads the words in order."
+ },
+ {
+  "i": 51,
+  "p": 13,
+  "start": 172.42,
+  "end": 174.26,
+  "text": "The classic one is the recurrent network."
+ },
+ {
+  "i": 52,
+  "p": 13,
+  "start": 174.76,
+  "end": 180.46,
+  "text": "It reads one word at a time and keeps a running summary, like someone holding the gist of a sentence in their head."
+ },
+ {
+  "i": 53,
+  "p": 13,
+  "start": 181.08,
+  "end": 182.82,
+  "text": "Each new word updates the gist."
+ },
+ {
+  "i": 54,
+  "p": 13,
+  "start": 183.14,
+  "end": 184.52,
+  "text": "So order matters now."
+ },
+ {
+  "i": 55,
+  "p": 13,
+  "start": 184.52,
+  "end": 187.08,
+  "text": "Shuffle the words and the gist comes out different."
+ },
+ {
+  "i": 56,
+  "p": 14,
+  "start": 187.9,
+  "end": 188.3,
+  "text": "There\u2019s a catch."
+ },
+ {
+  "i": 57,
+  "p": 14,
+  "start": 188.8,
+  "end": 193.86,
+  "text": "That summary has a fixed size, so in a long text the early parts get squeezed out."
+ },
+ {
+  "i": 58,
+  "p": 14,
+  "start": 194.52,
+  "end": 200.48,
+  "text": "These networks were also slow, since each step waits for the last one, and they were famously painful to train."
+ },
+ {
+  "i": 59,
+  "p": 15,
+  "start": 201.22,
+  "end": 205.7,
+  "text": "Then, in twenty eighteen, a method called U L M Fit showed a better way."
+ },
+ {
+  "i": 60,
+  "p": 15,
+  "start": 206.34,
+  "end": 207.46,
+  "text": "Don\u2019t start from zero."
+ },
+ {
+  "i": 61,
+  "p": 15,
+  "start": 208.16,
+  "end": 213.16,
+  "text": "First, train the network on a huge pile of ordinary text so it learns how language works."
+ },
+ {
+  "i": 62,
+  "p": 15,
+  "start": 213.16,
+  "end": 216.5,
+  "text": "Then fine-tune it on the small task we care about."
+ },
+ {
+  "i": 63,
+  "p": 15,
+  "start": 217.32,
+  "end": 220.56,
+  "text": "Movie review accuracy jumped to around ninety-five percent."
+ },
+ {
+  "i": 64,
+  "p": 16,
+  "start": 220.56,
+  "end": 225.0,
+  "text": "Remember that idea: train big first, then fine-tune small."
+ },
+ {
+  "i": 65,
+  "p": 16,
+  "start": 225.44,
+  "end": 226.34,
+  "text": "It keeps coming back."
+ },
+ {
+  "i": 66,
+  "p": 17,
+  "start": 227.56,
+  "end": 228.8,
+  "text": "There was another option too."
+ },
+ {
+  "i": 67,
+  "p": 17,
+  "start": 229.58,
+  "end": 241.88,
+  "text": "Convolutional networks, the kind used for images, can slide a small window across a sentence, three words at a time, hunting for patterns like \u201csurprisingly good acting.\u201d They\u2019re quick, because every window can be checked at once."
+ },
+ {
+  "i": 68,
+  "p": 17,
+  "start": 241.88,
+  "end": 245.18,
+  "text": "On reviews, they did about as well as the old bag of words."
+ },
+ {
+  "i": 69,
+  "p": 17,
+  "start": 245.8,
+  "end": 247.16,
+  "text": "Decent, but nothing special."
+ },
+ {
+  "i": 70,
+  "p": 18,
+  "start": 247.98,
+  "end": 250.98,
+  "text": "Then, in twenty seventeen, the transformer arrived."
+ },
+ {
+  "i": 71,
+  "p": 18,
+  "start": 251.5,
+  "end": 252.88,
+  "text": "Its big trick is attention."
+ },
+ {
+  "i": 72,
+  "p": 18,
+  "start": 253.76,
+  "end": 257.82,
+  "text": "Every word can look straight at every other word and decide which ones matter."
+ },
+ {
+  "i": 73,
+  "p": 18,
+  "start": 258.46,
+  "end": 260.62,
+  "text": "There\u2019s no fading summary to worry about."
+ },
+ {
+  "i": 74,
+  "p": 18,
+  "start": 261.42,
+  "end": 265.22,
+  "text": "\u201cBank\u201d can look at \u201criver\u201d and know which kind of bank it is."
+ },
+ {
+  "i": 75,
+  "p": 19,
+  "start": 265.8,
+  "end": 267.18,
+  "text": "Two families grew out of it."
+ },
+ {
+  "i": 76,
+  "p": 19,
+  "start": 267.8,
+  "end": 272.94,
+  "text": "Encoder models, like BERT, read text in both directions and are built to understand."
+ },
+ {
+  "i": 77,
+  "p": 19,
+  "start": 273.52,
+  "end": 280.82,
+  "text": "They put a special marker at the front, and once the model has read everything, that marker holds a summary we can hook a small classifier onto."
+ },
+ {
+  "i": 78,
+  "p": 19,
+  "start": 281.8,
+  "end": 286.38,
+  "text": "Decoder models, like G P T, read left to right and predict the next word."
+ },
+ {
+  "i": 79,
+  "p": 19,
+  "start": 286.96,
+  "end": 287.72,
+  "text": "They\u2019re built to write."
+ },
+ {
+  "i": 80,
+  "p": 20,
+  "start": 288.6,
+  "end": 292.52,
+  "text": "For a while, encoders were the natural sorters and decoders were the writers."
+ },
+ {
+  "i": 81,
+  "p": 20,
+  "start": 292.52,
+  "end": 295.98,
+  "text": "Then it turned out decoders could sort well too."
+ },
+ {
+  "i": 82,
+  "p": 20,
+  "start": 296.64,
+  "end": 297.3,
+  "text": "We can just ask."
+ },
+ {
+  "i": 83,
+  "p": 20,
+  "start": 297.78,
+  "end": 302.92,
+  "text": "\u201cIs this review positive or negative?\u201d A big enough model answers, no training needed."
+ },
+ {
+  "i": 84,
+  "p": 21,
+  "start": 303.68,
+  "end": 305.2,
+  "text": "The problem is that it\u2019s sloppy."
+ },
+ {
+  "i": 85,
+  "p": 21,
+  "start": 305.82,
+  "end": 309.26,
+  "text": "We want one clean label and sometimes we get a whole paragraph."
+ },
+ {
+  "i": 86,
+  "p": 21,
+  "start": 309.86,
+  "end": 312.76,
+  "text": "And we\u2019re paying for a giant model to do a small job."
+ },
+ {
+  "i": 87,
+  "p": 22,
+  "start": 313.56,
+  "end": 316.18,
+  "text": "So a lot of teams went with a less exciting option."
+ },
+ {
+  "i": 88,
+  "p": 22,
+  "start": 316.58,
+  "end": 322.18,
+  "text": "They took a modern encoder like Modern BERT, added a small classification head, and fine-tuned it."
+ },
+ {
+  "i": 89,
+  "p": 22,
+  "start": 322.8,
+  "end": 326.4,
+  "text": "With almost no effort, that gets around ninety-five percent on movie reviews."
+ },
+ {
+  "i": 90,
+  "p": 22,
+  "start": 326.86,
+  "end": 330.88,
+  "text": "Even a small G P T two sized model reaches about ninety-two."
+ },
+ {
+  "i": 91,
+  "p": 23,
+  "start": 330.88,
+  "end": 334.3,
+  "text": "So by now we had two options, and a rule of thumb for picking."
+ },
+ {
+  "i": 92,
+  "p": 24,
+  "start": 335.1,
+  "end": 338.36,
+  "text": "Option one was to ask a big general model every time."
+ },
+ {
+  "i": 93,
+  "p": 24,
+  "start": 338.82,
+  "end": 340.32,
+  "text": "No training, super flexible."
+ },
+ {
+  "i": 94,
+  "p": 24,
+  "start": 340.9,
+  "end": 343.94,
+  "text": "But it\u2019s slow, and it costs real money at scale."
+ },
+ {
+  "i": 95,
+  "p": 25,
+  "start": 344.78,
+  "end": 347.94,
+  "text": "Option two was to fine-tune a small model for the job."
+ },
+ {
+  "i": 96,
+  "p": 25,
+  "start": 348.56,
+  "end": 349.88,
+  "text": "Fast and cheap to run."
+ },
+ {
+  "i": 97,
+  "p": 25,
+  "start": 350.46,
+  "end": 355.26,
+  "text": "But we need labeled data, a training run, and a brand new model for every new problem."
+ },
+ {
+  "i": 98,
+  "p": 26,
+  "start": 355.94,
+  "end": 356.72,
+  "text": "The rule was simple."
+ },
+ {
+  "i": 99,
+  "p": 26,
+  "start": 357.04,
+  "end": 359.4,
+  "text": "For a one-off question, ask the big model."
+ },
+ {
+  "i": 100,
+  "p": 26,
+  "start": 359.86,
+  "end": 362.5,
+  "text": "For the same task a million times, train our own."
+ },
+ {
+  "i": 101,
+  "p": 26,
+  "start": 363.04,
+  "end": 364.04,
+  "text": "But that left a gap."
+ },
+ {
+  "i": 102,
+  "p": 26,
+  "start": 364.58,
+  "end": 369.34,
+  "text": "What we wanted was something quick and cheap that works on any question without training."
+ },
+ {
+  "i": 103,
+  "p": 26,
+  "start": 370.0,
+  "end": 371.48,
+  "text": "That\u2019s the gap Jev steps into."
+ },
+ {
+  "i": 104,
+  "p": 27,
+  "start": 371.48,
+  "end": 372.7,
+  "text": "Quick break."
+ },
+ {
+  "i": 105,
+  "p": 27,
+  "start": 373.08,
+  "end": 375.02,
+  "text": "If this is helping, please subscribe to the channel."
+ },
+ {
+  "i": 106,
+  "p": 27,
+  "start": 375.62,
+  "end": 381.64,
+  "text": "We explain AI topics in plain English, with no jargon, so none of it sounds like a foreign language."
+ },
+ {
+  "i": 107,
+  "p": 27,
+  "start": 382.62,
+  "end": 383.66,
+  "text": "Okay, back to Jev."
+ },
+ {
+  "i": 108,
+  "p": 28,
+  "start": 384.66,
+  "end": 387.12,
+  "text": "Jev comes from a company called TypeSafe AI."
+ },
+ {
+  "i": 109,
+  "p": 28,
+  "start": 387.7,
+  "end": 390.58,
+  "text": "We send it text, plus a question with some possible answers."
+ },
+ {
+  "i": 110,
+  "p": 28,
+  "start": 391.2,
+  "end": 393.1,
+  "text": "It sends back its pick, and probabilities."
+ },
+ {
+  "i": 111,
+  "p": 28,
+  "start": 394.02,
+  "end": 400.08,
+  "text": "They claim it matches the big Luna-class models on decision tasks, while being far faster and far cheaper."
+ },
+ {
+  "i": 112,
+  "p": 29,
+  "start": 401.0,
+  "end": 402.4,
+  "text": "There are three question types."
+ },
+ {
+  "i": 113,
+  "p": 29,
+  "start": 402.92,
+  "end": 405.46,
+  "text": "The first is Choice, which picks one answer from a list."
+ },
+ {
+  "i": 114,
+  "p": 29,
+  "start": 406.18,
+  "end": 411.06,
+  "text": "The second is Noul, a yes-or-no question where we get a probability for yes."
+ },
+ {
+  "i": 115,
+  "p": 29,
+  "start": 411.9,
+  "end": 416.28,
+  "text": "Ask several Noul questions at once and we can handle texts that fit more than one label."
+ },
+ {
+  "i": 116,
+  "p": 29,
+  "start": 417.2,
+  "end": 422.2,
+  "text": "The third is Score, which grades something against a rubric, like zero, one, or two."
+ },
+ {
+  "i": 117,
+  "p": 30,
+  "start": 423.1,
+  "end": 429.98,
+  "text": "For movie reviews, we paste in the review, ask \u201cwhat\u2019s the overall sentiment?\u201d, and describe each option in plain words."
+ },
+ {
+  "i": 118,
+  "p": 30,
+  "start": 430.92,
+  "end": 432.64,
+  "text": "Negative means an unfavorable opinion."
+ },
+ {
+  "i": 119,
+  "p": 30,
+  "start": 433.14,
+  "end": 434.7,
+  "text": "Positive means a favorable one."
+ },
+ {
+  "i": 120,
+  "p": 30,
+  "start": 435.38,
+  "end": 439.34,
+  "text": "Back comes \u201cpositive,\u201d a confidence number, and a probability for each option."
+ },
+ {
+  "i": 121,
+  "p": 31,
+  "start": 440.26,
+  "end": 446.06,
+  "text": "When people ran all twenty-five thousand test reviews through it, it got about ninety-six and a half percent right."
+ },
+ {
+  "i": 122,
+  "p": 31,
+  "start": 446.64,
+  "end": 449.62,
+  "text": "It took around twenty minutes and cost about sixty-five cents."
+ },
+ {
+  "i": 123,
+  "p": 31,
+  "start": 450.2,
+  "end": 454.08,
+  "text": "That\u2019s slightly ahead of a fine-tuned Modern BERT, with no training run."
+ },
+ {
+  "i": 124,
+  "p": 31,
+  "start": 454.98,
+  "end": 455.72,
+  "text": "A couple of caveats."
+ },
+ {
+  "i": 125,
+  "p": 31,
+  "start": 456.18,
+  "end": 458.76,
+  "text": "We can\u2019t tell whether those reviews were in its training data."
+ },
+ {
+  "i": 126,
+  "p": 31,
+  "start": 459.02,
+  "end": 461.3,
+  "text": "And the runs aren\u2019t perfectly repeatable."
+ },
+ {
+  "i": 127,
+  "p": 31,
+  "start": 461.68,
+  "end": 463.44,
+  "text": "Same input, slightly different totals."
+ },
+ {
+  "i": 128,
+  "p": 31,
+  "start": 463.94,
+  "end": 465.82,
+  "text": "That\u2019s normal for models served at scale."
+ },
+ {
+  "i": 129,
+  "p": 32,
+  "start": 466.78,
+  "end": 468.66,
+  "text": "This next part surprised a lot of people."
+ },
+ {
+  "i": 130,
+  "p": 32,
+  "start": 469.1,
+  "end": 473.1,
+  "text": "If we swap the question, the same model can play Tetris in real time."
+ },
+ {
+  "i": 131,
+  "p": 32,
+  "start": 473.66,
+  "end": 478.08,
+  "text": "Every move is just a choice from a short list: left, right, rotate, drop."
+ },
+ {
+  "i": 132,
+  "p": 32,
+  "start": 478.86,
+  "end": 481.94,
+  "text": "A fine-tuned sentiment model can\u2019t do that without starting over."
+ },
+ {
+  "i": 133,
+  "p": 33,
+  "start": 482.92,
+  "end": 486.6,
+  "text": "Nobody outside the company knows how Jev is built, so this part is a guess."
+ },
+ {
+  "i": 134,
+  "p": 33,
+  "start": 487.18,
+  "end": 489.78,
+  "text": "But there\u2019s a simple trick that could make a model like this work."
+ },
+ {
+  "i": 135,
+  "p": 34,
+  "start": 490.74,
+  "end": 493.56,
+  "text": "Normally, a classifier has one output per label."
+ },
+ {
+  "i": 136,
+  "p": 34,
+  "start": 494.0,
+  "end": 495.42,
+  "text": "Two labels, two outputs."
+ },
+ {
+  "i": 137,
+  "p": 34,
+  "start": 495.84,
+  "end": 496.52,
+  "text": "Want a third label?"
+ },
+ {
+  "i": 138,
+  "p": 34,
+  "start": 496.96,
+  "end": 497.62,
+  "text": "Rebuild the model."
+ },
+ {
+  "i": 139,
+  "p": 35,
+  "start": 498.14,
+  "end": 500.76,
+  "text": "The trick is to use only one output."
+ },
+ {
+  "i": 140,
+  "p": 35,
+  "start": 501.4,
+  "end": 507.52,
+  "text": "For each option, we show the model three things: the text, the instructions, and that option\u2019s description."
+ },
+ {
+  "i": 141,
+  "p": 35,
+  "start": 508.16,
+  "end": 512.48,
+  "text": "It reads them and produces a single number for how well the option fits."
+ },
+ {
+  "i": 142,
+  "p": 35,
+  "start": 513.2,
+  "end": 518.82,
+  "text": "We do this for every option, squash the scores into probabilities with softmax, and take the top one."
+ },
+ {
+  "i": 143,
+  "p": 35,
+  "start": 519.42,
+  "end": 522.5,
+  "text": "Three options means three passes through the same scorer."
+ },
+ {
+  "i": 144,
+  "p": 35,
+  "start": 522.74,
+  "end": 524.42,
+  "text": "Seven options, seven passes."
+ },
+ {
+  "i": 145,
+  "p": 35,
+  "start": 524.92,
+  "end": 526.48,
+  "text": "The model doesn\u2019t mind either way."
+ },
+ {
+  "i": 146,
+  "p": 35,
+  "start": 526.94,
+  "end": 530.76,
+  "text": "The labels are just part of the input now, so they can change every time."
+ },
+ {
+  "i": 147,
+  "p": 36,
+  "start": 530.76,
+  "end": 532.88,
+  "text": "That part is easy to build."
+ },
+ {
+  "i": 148,
+  "p": 36,
+  "start": 533.28,
+  "end": 539.0,
+  "text": "The hard part is making it work on tasks it has never seen, and that comes down to training data."
+ },
+ {
+  "i": 149,
+  "p": 36,
+  "start": 539.66,
+  "end": 545.56,
+  "text": "The company says its data is entirely synthetic, but carefully made, not just dumped out of a chatbot."
+ },
+ {
+  "i": 150,
+  "p": 36,
+  "start": 546.18,
+  "end": 548.88,
+  "text": "If that\u2019s true, most of the effort went into the data."
+ },
+ {
+  "i": 151,
+  "p": 36,
+  "start": 549.46,
+  "end": 552.1,
+  "text": "That fits something people in machine learning have seen for years."
+ },
+ {
+  "i": 152,
+  "p": 36,
+  "start": 552.56,
+  "end": 557.74,
+  "text": "When a model isn\u2019t good enough, better data usually helps more than another week of tweaking settings."
+ },
+ {
+  "i": 153,
+  "p": 37,
+  "start": 557.74,
+  "end": 561.52,
+  "text": "The part we find most interesting isn\u2019t flashy at all."
+ },
+ {
+  "i": 154,
+  "p": 37,
+  "start": 562.04,
+  "end": 562.96,
+  "text": "It\u2019s the probabilities."
+ },
+ {
+  "i": 155,
+  "p": 38,
+  "start": 563.88,
+  "end": 566.86,
+  "text": "Say a model calls a review seventy-four percent positive."
+ },
+ {
+  "i": 156,
+  "p": 38,
+  "start": 567.46,
+  "end": 569.06,
+  "text": "That number should mean something."
+ },
+ {
+  "i": 157,
+  "p": 38,
+  "start": 569.54,
+  "end": 574.74,
+  "text": "If we collect a hundred reviews that got a seventy-four, about seventy-four should truly be positive."
+ },
+ {
+  "i": 158,
+  "p": 38,
+  "start": 575.46,
+  "end": 576.36,
+  "text": "That\u2019s calibration."
+ },
+ {
+  "i": 159,
+  "p": 38,
+  "start": 577.56,
+  "end": 579.38,
+  "text": "Neural networks are usually bad at it."
+ },
+ {
+  "i": 160,
+  "p": 38,
+  "start": 579.68,
+  "end": 581.14,
+  "text": "They sound sure about everything."
+ },
+ {
+  "i": 161,
+  "p": 38,
+  "start": 581.66,
+  "end": 586.76,
+  "text": "A seventy-four and a fifty-four both give the label \u201cpositive,\u201d but we\u2019d treat them very differently."
+ },
+ {
+  "i": 162,
+  "p": 38,
+  "start": 587.38,
+  "end": 588.6,
+  "text": "We could trust the first one."
+ },
+ {
+  "i": 163,
+  "p": 38,
+  "start": 588.9,
+  "end": 590.24,
+  "text": "The second should go to a person."
+ },
+ {
+  "i": 164,
+  "p": 39,
+  "start": 591.28,
+  "end": 592.94,
+  "text": "One fix is temperature scaling."
+ },
+ {
+  "i": 165,
+  "p": 39,
+  "start": 593.48,
+  "end": 599.0,
+  "text": "We divide the model\u2019s raw scores by a single number before the softmax, tuned on held-out data."
+ },
+ {
+  "i": 166,
+  "p": 39,
+  "start": 599.56,
+  "end": 602.64,
+  "text": "It changes how sure the model sounds, not which answer it picks."
+ },
+ {
+  "i": 167,
+  "p": 40,
+  "start": 603.54,
+  "end": 607.8,
+  "text": "TypeSafe says it trains for honesty directly, with a method it calls R L C D."
+ },
+ {
+  "i": 168,
+  "p": 40,
+  "start": 608.34,
+  "end": 609.42,
+  "text": "The details are secret."
+ },
+ {
+  "i": 169,
+  "p": 40,
+  "start": 609.54,
+  "end": 613.24,
+  "text": "But a published idea points the same way, called R L C R."
+ },
+ {
+  "i": 170,
+  "p": 40,
+  "start": 614.04,
+  "end": 619.36,
+  "text": "Normally in this kind of reinforcement learning, a right answer earns one point and a wrong one earns zero."
+ },
+ {
+  "i": 171,
+  "p": 40,
+  "start": 620.64,
+  "end": 628.92,
+  "text": "R L C R also asks the model to state how likely it is to be right, then subtracts the squared gap between that confidence and what actually happened."
+ },
+ {
+  "i": 172,
+  "p": 41,
+  "start": 629.64,
+  "end": 630.6,
+  "text": "Here\u2019s how that plays out."
+ },
+ {
+  "i": 173,
+  "p": 41,
+  "start": 631.02,
+  "end": 632.32,
+  "text": "Ninety percent sure and right?"
+ },
+ {
+  "i": 174,
+  "p": 41,
+  "start": 632.32,
+  "end": 634.28,
+  "text": "That scores zero point nine nine."
+ },
+ {
+  "i": 175,
+  "p": 41,
+  "start": 634.94,
+  "end": 636.1,
+  "text": "Ninety percent sure and wrong?"
+ },
+ {
+  "i": 176,
+  "p": 41,
+  "start": 636.68,
+  "end": 637.98,
+  "text": "Minus zero point eight one."
+ },
+ {
+  "i": 177,
+  "p": 41,
+  "start": 638.58,
+  "end": 640.44,
+  "text": "Almost a whole point lost for swagger."
+ },
+ {
+  "i": 178,
+  "p": 41,
+  "start": 641.0,
+  "end": 642.48,
+  "text": "Twenty percent sure and wrong?"
+ },
+ {
+  "i": 179,
+  "p": 41,
+  "start": 643.2,
+  "end": 647.28,
+  "text": "Minus zero point zero four, a tiny slap, because it knew it might be wrong."
+ },
+ {
+  "i": 180,
+  "p": 41,
+  "start": 648.16,
+  "end": 651.24,
+  "text": "So the model\u2019s best move is to be honest about what it knows."
+ },
+ {
+  "i": 181,
+  "p": 41,
+  "start": 651.72,
+  "end": 658.84,
+  "text": "In that paper, calibration error on one test dropped from zero point three seven to zero point zero three, with about the same accuracy."
+ },
+ {
+  "i": 182,
+  "p": 42,
+  "start": 659.54,
+  "end": 662.3,
+  "text": "We don\u2019t know if Jev works this way."
+ },
+ {
+  "i": 183,
+  "p": 43,
+  "start": 662.3,
+  "end": 664.86,
+  "text": "A fair question is whether normal training already does this."
+ },
+ {
+  "i": 184,
+  "p": 43,
+  "start": 665.32,
+  "end": 666.32,
+  "text": "In theory, yes."
+ },
+ {
+  "i": 185,
+  "p": 43,
+  "start": 666.84,
+  "end": 669.66,
+  "text": "In practice, networks overfit their confidence."
+ },
+ {
+  "i": 186,
+  "p": 43,
+  "start": 670.22,
+  "end": 675.0,
+  "text": "They can get more and more certain on training data without getting any more correct on new data."
+ },
+ {
+  "i": 187,
+  "p": 43,
+  "start": 675.58,
+  "end": 678.64,
+  "text": "So extra tricks sometimes help a little, and we always have to check."
+ },
+ {
+  "i": 188,
+  "p": 44,
+  "start": 679.84,
+  "end": 682.84,
+  "text": "Soon after Jev launched, hundreds of clones appeared."
+ },
+ {
+  "i": 189,
+  "p": 44,
+  "start": 683.24,
+  "end": 689.24,
+  "text": "Most take a small model, fine-tune it on sorting examples, and wrap a Jev-looking A P I around it."
+ },
+ {
+  "i": 190,
+  "p": 44,
+  "start": 689.6,
+  "end": 690.42,
+  "text": "That\u2019s the easy part."
+ },
+ {
+  "i": 191,
+  "p": 44,
+  "start": 690.42,
+  "end": 697.42,
+  "text": "When people tested a couple of the better ones on the movie reviews, one scored about eighty-three percent and another about ninety-two."
+ },
+ {
+  "i": 192,
+  "p": 44,
+  "start": 698.18,
+  "end": 699.64,
+  "text": "Neither could handle the Tetris test."
+ },
+ {
+  "i": 193,
+  "p": 44,
+  "start": 700.38,
+  "end": 705.5,
+  "text": "Handling lots of different tasks is the hard part, and that\u2019s what set Jev apart from the copies."
+ },
+ {
+  "i": 194,
+  "p": 45,
+  "start": 706.4,
+  "end": 709.34,
+  "text": "An open version would still be a big deal, mostly for privacy."
+ },
+ {
+  "i": 195,
+  "p": 45,
+  "start": 710.04,
+  "end": 712.0,
+  "text": "Plenty of text can\u2019t be sent to someone else\u2019s servers."
+ },
+ {
+  "i": 196,
+  "p": 46,
+  "start": 712.94,
+  "end": 714.2,
+  "text": "The big labs noticed too."
+ },
+ {
+  "i": 197,
+  "p": 46,
+  "start": 714.7,
+  "end": 718.52,
+  "text": "OpenAI announced its own version, the Decisions A P I, built on Luna."
+ },
+ {
+  "i": 198,
+  "p": 47,
+  "start": 718.52,
+  "end": 720.56,
+  "text": "It has weak spots too."
+ },
+ {
+  "i": 199,
+  "p": 47,
+  "start": 721.26,
+  "end": 727.44,
+  "text": "Reportedly, Jev struggles with legal review in languages other than English, though a cheap translation step in front can patch that."
+ },
+ {
+  "i": 200,
+  "p": 47,
+  "start": 728.0,
+  "end": 733.88,
+  "text": "And for one narrow task at huge volume, a custom fine-tuned model still wins on speed and accuracy."
+ },
+ {
+  "i": 201,
+  "p": 48,
+  "start": 735.08,
+  "end": 735.84,
+  "text": "Where would we use it?"
+ },
+ {
+  "i": 202,
+  "p": 48,
+  "start": 736.38,
+  "end": 739.58,
+  "text": "The obvious ones are sorting email and routing support tickets."
+ },
+ {
+  "i": 203,
+  "p": 48,
+  "start": 740.04,
+  "end": 744.3,
+  "text": "It could also check text for prompt injection before it reaches an AI agent."
+ },
+ {
+  "i": 204,
+  "p": 48,
+  "start": 744.74,
+  "end": 747.3,
+  "text": "Or decide how hard a big model should think."
+ },
+ {
+  "i": 205,
+  "p": 48,
+  "start": 747.98,
+  "end": 750.54,
+  "text": "Or pick which instruction file an agent should load."
+ },
+ {
+  "i": 206,
+  "p": 48,
+  "start": 751.06,
+  "end": 753.54,
+  "text": "Or act as a judge when we test other models."
+ },
+ {
+  "i": 207,
+  "p": 49,
+  "start": 754.46,
+  "end": 756.6,
+  "text": "None of that is a new ability, though."
+ },
+ {
+  "i": 208,
+  "p": 49,
+  "start": 757.04,
+  "end": 757.96,
+  "text": "Classifiers are old."
+ },
+ {
+  "i": 209,
+  "p": 49,
+  "start": 758.48,
+  "end": 761.28,
+  "text": "What changed is how hard it is to get one."
+ },
+ {
+  "i": 210,
+  "p": 49,
+  "start": 761.82,
+  "end": 764.48,
+  "text": "It used to take a labeled dataset and a training run."
+ },
+ {
+  "i": 211,
+  "p": 49,
+  "start": 765.12,
+  "end": 767.8,
+  "text": "Now it takes a sentence describing what we want."
+ },
+ {
+  "i": 212,
+  "p": 49,
+  "start": 768.44,
+  "end": 771.78,
+  "text": "So the bar for building our own model is much higher than it was."
+ },
+ {
+  "i": 213,
+  "p": 50,
+  "start": 772.66,
+  "end": 780.62,
+  "text": "And if small, fast models handle the little choices inside bigger AI systems, the expensive models only get called when they\u2019re really needed."
+ },
+ {
+  "i": 214,
+  "p": 50,
+  "start": 781.42,
+  "end": 783.92,
+  "text": "That could make AI agents cheaper and quicker."
+ },
+ {
+  "i": 215,
+  "p": 51,
+  "start": 784.76,
+  "end": 786.2,
+  "text": "So is it just a boring tool?"
+ },
+ {
+  "i": 216,
+  "p": 51,
+  "start": 787.06,
+  "end": 787.46,
+  "text": "Kind of."
+ },
+ {
+  "i": 217,
+  "p": 51,
+  "start": 787.92,
+  "end": 789.42,
+  "text": "It\u2019s the same old sorting job."
+ },
+ {
+  "i": 218,
+  "p": 51,
+  "start": 789.72,
+  "end": 793.54,
+  "text": "We just get to ask for it in plain English now, and the answer comes back almost instantly."
+ }
+]
